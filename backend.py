@@ -21,9 +21,6 @@ from functools import partial
 import time
 import math
 
-load_dotenv()
-
-
 #####################################################################################################################
 #                                                                                                                   #
 #                                                   Agents Tools                                                    #

@@ -1,6 +1,12 @@
 import streamlit as st
 from backend import run_financial_agent
 import time
+import os
+
+api_keys = st.secrets['API_KEYS']
+
+os.environ["OPENAI_API_KEY"] = api_keys["OPENAI"]
+os.environ["SERPAPI_API_KEY"] = api_keys["SERPAPI"]
 
 result = None
 
